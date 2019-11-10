@@ -82,7 +82,7 @@ def extract_frames(video, start_frame, frame_dir, num_frames_to_extract=16):
         sys.exit(-6)
 
     # move to start_frame
-    cap.set(cv2.CV_CAP_PROP_POS_FRAMES, start_frame)
+    cap.set(cv2.PROP_POS_FRAMES, start_frame)
 
     # grab each frame and save
     for frame_count in range(num_frames_to_extract):
