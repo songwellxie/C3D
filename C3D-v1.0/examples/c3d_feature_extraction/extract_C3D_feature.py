@@ -57,8 +57,8 @@ def get_frame_count(video):
         sys.exit(-6)
 
     # get frame counts
-    num_frames = int(cap.get(cv2.CV_CAP_PROP_FRAME_COUNT))
-    fps = cap.get(cv2.CV_CAP_PROP_FPS)
+    num_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    fps = cap.get(cv2.CAP_PROP_FPS)
 
     # in case, fps was not available, use default of 29.97
     if not fps or fps != fps:
